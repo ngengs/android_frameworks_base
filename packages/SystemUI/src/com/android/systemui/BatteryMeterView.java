@@ -557,7 +557,7 @@ public class BatteryMeterView extends View implements DemoMode,
             }
             if (mChargingAnimationsEnabled && !mThemeApplied) {
                 if (tracker.level < 100 && tracker.plugged) {
-                    startChargingAnimation(true);
+                    startChargingAnimation(0);
                 } else {
                     cancelChargingAnimation();
                 }
@@ -608,7 +608,7 @@ public class BatteryMeterView extends View implements DemoMode,
                     mLevelDrawable.setAlpha(defaultAlpha);
                     mAnimator = null;
                     if (repeat <= 0) {
-                        istartChargingAnimation(0);
+                        startChargingAnimation(0);
                     } else if (repeat != 1) {
                         startChargingAnimation(repeat - 1);
                     }
