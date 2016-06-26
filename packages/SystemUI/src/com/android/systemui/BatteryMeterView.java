@@ -541,9 +541,11 @@ public class BatteryMeterView extends View implements DemoMode,
         public void setDarkIntensity(int backgroundColor, int fillColor) {
             mIconTint = fillColor;
             // Make bolt fully opaque for increased visibility
-            mBoltDrawable.setTint(0xff000000 | fillColor);
             mFrameDrawable.setTint(backgroundColor);
-            updateBoltDrawableLayer(mBatteryDrawable, mBoltDrawable);
+            if (mBoltDrawable != null) {
+                mBoltDrawable.setTint(0xff000000 | fillColor);
+                updateBoltDrawableLayer(mBatteryDrawable, mBoltDrawable);
+            }
             invalidate();
         }
 
@@ -577,15 +579,9 @@ public class BatteryMeterView extends View implements DemoMode,
             final LayerDrawable layerDrawable = (LayerDrawable) batteryDrawable;
             final Drawable frame = layerDrawable.findDrawableByLayerId(R.id.battery_frame);
             final Drawable level = layerDrawable.findDrawableByLayerId(R.id.battery_fill);
-            final Drawable bolt = layerDrawable.findDrawableByLayerId(
-                    R.id.battery_charge_indicator);
             // now check that the required layers exist and are of the correct type
             if (frame == null) {
                 throw new BatteryMeterDrawableException("Missing battery_frame drawble");
-            }
-            if (bolt == null) {
-                throw new BatteryMeterDrawableException(
-                        "Missing battery_charge_indicator drawable");
             }
             if (level != null) {
                 // check that the level drawable is an AnimatedVectorDrawable
@@ -647,14 +643,16 @@ public class BatteryMeterView extends View implements DemoMode,
 
             // Make sure we don't draw the charge indicator if not plugged in
             Drawable d = mBatteryDrawable.findDrawableByLayerId(R.id.battery_charge_indicator);
-            if (d instanceof BitmapDrawable) {
-                // In case we are using a BitmapDrawable, which we should be unless something bad
-                // happened, we need to change the paint rather than the alpha in case the blendMode
-                // has been set to clear.  Clear always clears regardless of alpha level ;)
-                BitmapDrawable bd = (BitmapDrawable) d;
-                bd.getPaint().set(tracker.plugged ? mTextAndBoltPaint : mClearPaint);
-            } else {
-                d.setAlpha(tracker.plugged ? 255 : 0);
+            if (d != null) {
+                if (d instanceof BitmapDrawable) {
+                    // In case we are using a BitmapDrawable, which we should be unless something bad
+                    // happened, we need to change the paint rather than the alpha in case the blendMode
+                    // has been set to clear.  Clear always clears regardless of alpha level ;)
+                    BitmapDrawable bd = (BitmapDrawable) d;
+                    bd.getPaint().set(tracker.plugged ? mTextAndBoltPaint : mClearPaint);
+                } else {
+                    d.setAlpha(tracker.plugged ? 255 : 0);
+                }
             }
 
             // Now draw the level indicator
