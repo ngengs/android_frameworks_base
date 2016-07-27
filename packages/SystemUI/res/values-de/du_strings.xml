@@ -66,7 +66,7 @@
   <string name="quick_settings_screenshot_label">Bildschirmfoto</string>
   <!-- NFC QS tile -->
   <!-- Sync QS tile -->
-  <string name="quick_settings_sync_label">Synchronisation</string>
+  <string name="quick_settings_sync_label">Sync</string>
   <string name="accessibility_quick_settings_sync_off">Sync aus</string>
   <string name="accessibility_quick_settings_sync_on">Sync an</string>
   <string name="accessibility_quick_settings_sync_changed_off">Sync ausgeschaltet</string>
@@ -144,6 +144,8 @@
   <string name="status_bar_headset">Kopfhörer mit Kabel</string>
   <!-- vpn icon switch -->
   <string name="status_bar_vpn">VPN</string>
+  <!-- Du logo switch -->
+  <string name="show_du_logo_title">DU-Logo</string>
   <!-- Caffeine Tile -->
   <string name="quick_settings_caffeine_label">Caffeine</string>
   <!-- Content description of the caffeine tile in quick settings when off (not shown on the screen). [CHAR LIMIT=NONE] -->
@@ -163,11 +165,16 @@
   <string name="action_delete_fault">Löschen war nicht erfolgreich</string>
   <string name="action_save_success">Gespeichert</string>
   <string name="action_save_fault">Speichern war nicht erfolgreich</string>
-  <string name="pref_action_color_title">Farbe der Aktionstasten</string>
-  <string name="pref_action_color_summary">Wählen Sie Ihre Lieblingsfarbe für die Aktions-Tasten</string>
-  <string name="pref_category_main">Haupteinstellungen</string>
-  <string name="pref_category_user">Benutzereinstellungen</string>
-  <string name="pref_crop_behavior_title">Crop-Verhalten</string>
-  <string name="pref_crop_behavior_summary">Das zugeschnittene Bild verwenden, auch wenn das ursprüngliche nicht beschnitten wurde</string>
-  <string name="action_ok">OK</string>
+  <string name="action_edit">Bearbeiten</string>
+  <!-- QS location sensors mode -->
+  <string name="accessibility_quick_settings_location_battery_saving">Standortübermittlung: Energiesparmodus.</string>
+  <string name="accessibility_quick_settings_location_gps_only">Standortübermittlung: Nur Gerät.</string>
+  <string name="accessibility_quick_settings_location_high_accuracy">Standortübermittlung: Hohe Genauigkeit.</string>
+  <string name="accessibility_quick_settings_location_changed_battery_saving">Standortübermittlung in Energiesparmodus umgeschaltet.</string>
+  <string name="accessibility_quick_settings_location_changed_gps_only">Standortübermittlung in Nur-Gerät-Modus umgeschaltet.</string>
+  <string name="accessibility_quick_settings_location_changed_high_accuracy">Standortübermittlung auf hohe Genauigkeit umgeschaltet.</string>
+  <string name="quick_settings_location_detail_title">Standortmodus</string>
+  <string name="quick_settings_location_battery_saving_label">Energiesparmodus</string>
+  <string name="quick_settings_location_gps_only_label">Nur Gerät</string>
+  <string name="quick_settings_location_high_accuracy_label">Hohe Genauigkeit</string>
 </resources>

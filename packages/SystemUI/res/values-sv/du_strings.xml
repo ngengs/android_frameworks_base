@@ -144,6 +144,8 @@
   <string name="status_bar_headset">Trådanslutet headset</string>
   <!-- vpn icon switch -->
   <string name="status_bar_vpn">VPN</string>
+  <!-- Du logo switch -->
+  <string name="show_du_logo_title">DU Logga</string>
   <!-- Caffeine Tile -->
   <string name="quick_settings_caffeine_label">Koffein</string>
   <!-- Content description of the caffeine tile in quick settings when off (not shown on the screen). [CHAR LIMIT=NONE] -->
@@ -163,11 +165,16 @@
   <string name="action_delete_fault">Borttagning misslyckades</string>
   <string name="action_save_success">Sparat</string>
   <string name="action_save_fault">Sparandet misslyckades</string>
-  <string name="pref_action_color_title">Åtgärdknapps färg</string>
-  <string name="pref_action_color_summary">Välj din favorit färg för åtgärdsknapparna</string>
-  <string name="pref_category_main">Huvudinställningar</string>
-  <string name="pref_category_user">Användarinställningar</string>
-  <string name="pref_crop_behavior_title">Beskärnings beteende</string>
-  <string name="pref_crop_behavior_summary">Använd den beskurna bilden även om den originella egentligen inte beskurits med beskärnings funktionen</string>
-  <string name="action_ok">OK</string>
+  <string name="action_edit">Redigera</string>
+  <!-- QS location sensors mode -->
+  <string name="accessibility_quick_settings_location_battery_saving">Plats rapportering: batterisparläge.</string>
+  <string name="accessibility_quick_settings_location_gps_only">Plats rapportering: sensorer endast läge.</string>
+  <string name="accessibility_quick_settings_location_high_accuracy">Plats rapportering: hög noggrannhet läge.</string>
+  <string name="accessibility_quick_settings_location_changed_battery_saving">Plats rapportering ändras till batterisparläge.</string>
+  <string name="accessibility_quick_settings_location_changed_gps_only">Plats rapportering ändras till sensorer endast läge.</string>
+  <string name="accessibility_quick_settings_location_changed_high_accuracy">Plats rapportering ändrats till hög noggrannhet läge.</string>
+  <string name="quick_settings_location_detail_title">Platsläge</string>
+  <string name="quick_settings_location_battery_saving_label">Batterisparläge</string>
+  <string name="quick_settings_location_gps_only_label">Endast enhet</string>
+  <string name="quick_settings_location_high_accuracy_label">Hög noggrannhet</string>
 </resources>

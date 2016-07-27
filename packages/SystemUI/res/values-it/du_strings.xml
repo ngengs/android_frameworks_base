@@ -19,7 +19,7 @@
   <!-- Wi-Fi hotspot label when enabled -->
   <plurals name="wifi_hotspot_connected_clients_label">
     <item quantity="one">%1$d client</item>
-    <item quantity="other">%1$d clients</item>
+    <item quantity="other">%1$d client</item>
   </plurals>
   <!-- Notification which notifies user flashlight is enabled -->
   <string name="quick_settings_tile_flashlight_not_title">Torcia accesa</string>
@@ -144,6 +144,8 @@
   <string name="status_bar_headset">Auricolare con cavo</string>
   <!-- vpn icon switch -->
   <string name="status_bar_vpn">VPN</string>
+  <!-- Du logo switch -->
+  <string name="show_du_logo_title">Logo DU</string>
   <!-- Caffeine Tile -->
   <string name="quick_settings_caffeine_label">Caffeina</string>
   <!-- Content description of the caffeine tile in quick settings when off (not shown on the screen). [CHAR LIMIT=NONE] -->
@@ -163,11 +165,16 @@
   <string name="action_delete_fault">Eliminazione non riuscita</string>
   <string name="action_save_success">Salvato</string>
   <string name="action_save_fault">Salvataggio non riuscito</string>
-  <string name="pref_action_color_title">Colore pulsanti azione</string>
-  <string name="pref_action_color_summary">Scegli un colore preferito per i pulsanti azione</string>
-  <string name="pref_category_main">Impostazioni principali</string>
-  <string name="pref_category_user">Impostazioni utente</string>
-  <string name="pref_crop_behavior_title">Comportamento al taglio</string>
-  <string name="pref_crop_behavior_summary">Usa l\'immagine ritagliata anche se quella originale non è stata ritagliata con l\'azione di ritaglio</string>
-  <string name="action_ok">OK</string>
+  <string name="action_edit">Modifica</string>
+  <!-- QS location sensors mode -->
+  <string name="accessibility_quick_settings_location_battery_saving">Geolocalizzazione: modalità risparmio batteria.</string>
+  <string name="accessibility_quick_settings_location_gps_only">Geolocalizzazione: modalità solo sensori.</string>
+  <string name="accessibility_quick_settings_location_high_accuracy">Geolocalizzazione: modalità alta precisione.</string>
+  <string name="accessibility_quick_settings_location_changed_battery_saving">Geolocalizzazione cambiata in modalità risparmio batteria.</string>
+  <string name="accessibility_quick_settings_location_changed_gps_only">Geolocalizzazione cambiata in modalità solo sensori.</string>
+  <string name="accessibility_quick_settings_location_changed_high_accuracy">Geolocalizzazione modificata in modalità ad alta precisione.</string>
+  <string name="quick_settings_location_detail_title">Modalità geolocalizzazione</string>
+  <string name="quick_settings_location_battery_saving_label">Risparmio batteria</string>
+  <string name="quick_settings_location_gps_only_label">Solo dispositivo</string>
+  <string name="quick_settings_location_high_accuracy_label">Alta precisione</string>
 </resources>

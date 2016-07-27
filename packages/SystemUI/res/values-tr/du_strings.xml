@@ -57,11 +57,11 @@
   <string name="accessibility_quick_settings_usb_tether_changed_on">USB internet paylaşımı açıldı</string>
   <string name="quick_settings_usb_tether_label">USB internet paylaşımı</string>
   <!-- Ambient Display QS tile -->
-  <string name="accessibility_quick_settings_ambient_display_off">Ortam Ekranı Özelliğini kapat</string>
-  <string name="accessibility_quick_settings_ambient_display_on">Ortam Ekranı Özelliğini aç</string>
-  <string name="accessibility_quick_settings_ambient_display_changed_off">Ortam ekranı kapalı</string>
-  <string name="accessibility_quick_settings_ambient_display_changed_on">Ortam ekranı açık</string>
-  <string name="quick_settings_ambient_display_label">Ortam Ekranı</string>
+  <string name="accessibility_quick_settings_ambient_display_off">Bildirim Ekranı kapalı</string>
+  <string name="accessibility_quick_settings_ambient_display_on">Bildirim Ekranı açık</string>
+  <string name="accessibility_quick_settings_ambient_display_changed_off">Bildirim ekranı kapatıldı</string>
+  <string name="accessibility_quick_settings_ambient_display_changed_on">Bildirim ekranı açıldı</string>
+  <string name="quick_settings_ambient_display_label">Bildirim Ekranı</string>
   <!-- Screenshot QS tile -->
   <string name="quick_settings_screenshot_label">Ekran Görüntüsü</string>
   <!-- NFC QS tile -->
@@ -103,7 +103,7 @@
   <string name="quick_settings_expanded_desktop">Genişletilmiş</string>
   <string name="quick_settings_expanded_desktop_off">Normal</string>
   <!-- ADB over network Tile -->
-  <string name="quick_settings_adb_network">ADB network</string>
+  <string name="quick_settings_adb_network">ADB ağı</string>
   <string name="quick_settings_network_adb_enabled_label">Etkin</string>
   <string name="quick_settings_network_adb_disabled_label">Devre dışı</string>
   <!-- Themes QS Tile -->
@@ -118,8 +118,8 @@
   <string name="task_manager_title">Görev Yöneticisi</string>
   <string name="message_switch_fail">Arayüzü olmadığı için bu göreve geçilemiyor.</string>
   <string name="tasklist_killall">Tümünü sonlandır</string>
-  <string name="tasklist_memory_usage">"Free/Total Memory: <xliff:g id="number">%s</xliff:g> / <xliff:g id="name">%s</xliff:g>"</string>
-  <string name="message_keep_one_launcher">Should keep at least one home activity!</string>
+  <string name="tasklist_memory_usage">"Boş/Toplam Bellek: [<xliff:g id="number">%s</xliff:g>] / [<xliff:g id="name">%s</xliff:g>]"</string>
+  <string name="message_keep_one_launcher">En azından bir başlatıcı olmalı!</string>
   <!-- 4G LTE switch -->
   <string name="show_fourg_title">LTE yerine 4G göster</string>
   <string name="show_fourg_summary">LTE durum çubuğu göstergesini 4G ile değiştirir</string>
@@ -132,8 +132,8 @@
   <string name="quick_settings_navigation_bar">Dolaşım çubuğu</string>
   <string name="quick_settings_smartbar">SmartBar</string>
   <string name="quick_settings_smartbar_off">SmartBar kapalı</string>
-  <string name="quick_settings_fling">Fling</string>
-  <string name="quick_settings_fling_off">Fling off</string>
+  <string name="quick_settings_fling">Fırlatma</string>
+  <string name="quick_settings_fling_off">üzerinden atmak</string>
   <!-- IME selector Tile -->
   <string name="quick_settings_ime_label">Klavye Değiştirici</string>
   <!-- Hotspot airplane mode -->
@@ -144,6 +144,8 @@
   <string name="status_bar_headset">Kablolu kulaklık</string>
   <!-- vpn icon switch -->
   <string name="status_bar_vpn">VPN</string>
+  <!-- Du logo switch -->
+  <string name="show_du_logo_title">DU logosu</string>
   <!-- Caffeine Tile -->
   <string name="quick_settings_caffeine_label">Kafein</string>
   <!-- Content description of the caffeine tile in quick settings when off (not shown on the screen). [CHAR LIMIT=NONE] -->
@@ -153,8 +155,8 @@
   <!-- Volume Panel Tile -->
   <string name="quick_settings_volume_panel_label">Ses paneli</string>
   <!-- Heads up toast -->
-  <string name="heads_up_enabled">Açılır bildirimler etkinleştirildi</string>
-  <string name="heads_up_disabled">Açılır bildirimler devre dışı bırakıldı</string>
+  <string name="heads_up_enabled">Bildirim pencereleri etkinleştirildi</string>
+  <string name="heads_up_disabled">Bildirim pencereleri devre dışı bırakıldı</string>
   <!-- Path data for portrait battery -->
   <!-- Path data for landscape battery -->
   <!-- Path data for circle battery -->
@@ -163,11 +165,16 @@
   <string name="action_delete_fault">Silme işlemi başarısız</string>
   <string name="action_save_success">Kaydedildi</string>
   <string name="action_save_fault">Kaydetme işlemi başarısız</string>
-  <string name="pref_action_color_title">Eylem düğme rengi</string>
-  <string name="pref_action_color_summary">Eylem düğmeleri için en sevdiğiniz rengi seçin</string>
-  <string name="pref_category_main">Ana Ayarlar</string>
-  <string name="pref_category_user">Kullanıcı Ayarları</string>
-  <string name="pref_crop_behavior_title">Kırpma davranışı</string>
-  <string name="pref_crop_behavior_summary">Orjinal resim gerçekte kırpma işlemi ile kırpılmamış olsa bile kırpılmış resmi kullan</string>
-  <string name="action_ok">Tamam</string>
+  <string name="action_edit">Düzenle</string>
+  <!-- QS location sensors mode -->
+  <string name="accessibility_quick_settings_location_battery_saving">Konum bildirimi: pil tasarruf modu.</string>
+  <string name="accessibility_quick_settings_location_gps_only">Konum bildirimi: sadece sensörler modu.</string>
+  <string name="accessibility_quick_settings_location_high_accuracy">Konum bildirimi: yüksek hassasiyet modu.</string>
+  <string name="accessibility_quick_settings_location_changed_battery_saving">Konum bildirimi pil tasarruf moduna geçti.</string>
+  <string name="accessibility_quick_settings_location_changed_gps_only">Konum bildirimi sadece sensörler moduna geçti.</string>
+  <string name="accessibility_quick_settings_location_changed_high_accuracy">Konum bildirimi yüksek hassasiyet moduna geçti.</string>
+  <string name="quick_settings_location_detail_title">Konum modu</string>
+  <string name="quick_settings_location_battery_saving_label">Pil tasarrufu</string>
+  <string name="quick_settings_location_gps_only_label">Yalnızca cihaz</string>
+  <string name="quick_settings_location_high_accuracy_label">Yüksek doğruluk</string>
 </resources>
